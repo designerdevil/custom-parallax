@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.parallax-container {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.parallax-items {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    mix-blend-mode: multiply;
+}
+
+.content {
+    height: 400000px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Parallax Implementation</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript">
+        /**
+         * This variable need to be made available on the page
+         * Here we will have all the sets and paths of images in that set
+         */
+        const parallaxImages = {
+            desktop: {
+                setA: [
+                    "images/desktop-green-set-a.png",
+                    "images/desktop-purple-set-a.png"
+                ],
+                setB: [
+                    "images/desktop-green-set-b.png",
+                    "images/desktop-purple-set-b.png"
+                ],
+            },
+            mobile: {
+                setA: [
+                    "images/mobile-green-set-a.png",
+                    "images/mobile-purple-set-a.png"
+                ],
+                setB: [
+                    "images/mobile-green-set-b.png",
+                    "images/mobile-purple-set-b.png"
+                ],
+            }
+        };
+        window.yourNameSpace = {};
+        window.yourNameSpace.parallaxSet = '1';
+        window.yourNameSpace.parallaxImages = {...parallaxImages};
+    </script>
+</head>
+
+<body>
+    <div id="parallax">
+        <div class="parallax-container"></div>
+    </div>
+    <div class="content"></div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+
+</html>
