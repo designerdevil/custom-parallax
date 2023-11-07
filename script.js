@@ -1,5 +1,5 @@
 var yourNameSpace = window.yourNameSpace || {};
-yourNameSpace.informaParallax = yourNameSpace.informaParallax || (function ($, window, document) {
+yourNameSpace.yourNameSpaceParallax = yourNameSpace.yourNameSpaceParallax || (function ($, window, document) {
     const self = {};
     self.parallaxEl = () => document.getElementById("parallax");
     const itemClass = "parallax-items";
@@ -87,5 +87,5 @@ yourNameSpace.informaParallax = yourNameSpace.informaParallax || (function ($, w
 
 
 setTimeout(function () {
-    yourNameSpace.informaParallax.init();
+    yourNameSpace.yourNameSpaceParallax.init();
 }, 200);
